@@ -108,7 +108,7 @@ func RunPessimism(_ *cli.Context) error {
 	return nil
 }
 
-// fetchBootSessions ... Loads the bootstrap file
+// fetchBootSessions ... Loads all the bootstrap file
 func fetchBootSessions(path string) ([]*app.BootSession, error) {
 	if !strings.HasSuffix(path, extJSON) {
 		return nil, fmt.Errorf("invalid bootstrap file format; expected %s", extJSON)
